@@ -1,0 +1,13 @@
+# Project exclude paths
+/.gradle/
+/build/
+/membership-service/out/
+/membership-service/out/production/classes/
+/out/
+/out/production/classes/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
