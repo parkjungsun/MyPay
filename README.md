@@ -3,7 +3,7 @@
 ### About MSA
 1. Feature of MSA
 2. MSA Pattern
-3. DDD
+3. MSA Based on DDD
 ---
 ### Demo 기능
 * 회원 가입 및 정보 변경
