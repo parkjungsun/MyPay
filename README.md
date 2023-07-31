@@ -1,9 +1,9 @@
 ## Pay Service
 
 ### About MSA
-1. Feature of MSA
-2. MSA Pattern
-3. MSA Based on DDD
+1. [Feature of MSA](https://github.com/parkjungsun/MyPay/edit/main/README.md#:~:text=1-,Feature,-of%20MSA.md)
+2. [MSA Pattern](https://github.com/parkjungsun/MyPay/edit/main/README.md#:~:text=2%20MSA-,Pattern,-.md)
+3. [MSA Based on DDD](https://github.com/parkjungsun/MyPay/edit/main/README.md#:~:text=3%20MSA-,Based,-on%20DDD.md)
 ---
 ### Demo 기능
 * 회원 가입 및 정보 변경
@@ -17,7 +17,7 @@
     * 결제 시스템 + 크론잡을 통한 정산 기능
 ---
 ### MSA 아키텍쳐 설계
-* Membership Service - 멤버십 서비스  
+* [Membership Service - 멤버십 서비스](https://github.com/parkjungsun/MyPay/edit/main/README.md#:~:text=src/main-,README,-.md)  
   * 고객(회원/가맹점)을 관리하고 계좌 등록, 인증 등 패캠페이의 고객을 관리하고 편의 기능을 제공하는 서비스
 * Banking Service - 뱅킹 서비스
   * 외부 은행과의 직접적인 통신을 담당하고, 펌뱅킹 계약이나 수수료 관리 등 외부 은행 사용과 관련된 모든 기능을 제공하는 서비스
