@@ -1,7 +1,7 @@
 package org.mypay.membership.adapter.in.web;
 
-import common.WebAdapter;
 import lombok.RequiredArgsConstructor;
+import org.mypay.common.WebAdapter;
 import org.mypay.membership.application.port.in.FindMembershipCommand;
 import org.mypay.membership.application.port.in.FindMembershipUseCase;
 import org.mypay.membership.application.port.in.RegisterMembershipCommand;
