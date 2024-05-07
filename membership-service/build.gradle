@@ -5,6 +5,8 @@ buildscript {
 }
 
 plugins {
+    /* gradle 에서 dockerizing 하기 위한 plugin */
+    id 'com.palantir.docker' version '0.25.0'
     id 'org.springframework.boot' version '2.5.2'
     id 'java'
 }
@@ -15,7 +17,7 @@ compileJava {
 }
 
 group 'org.mypay.membership'
-version '1.0-SNAPSHOT'
+version '1.0.2'
 
 apply plugin: 'java'
 apply plugin: 'java-library'
@@ -45,9 +47,18 @@ dependencies {
 
     implementation project(path: ':common')
 
-    runtimeOnly 'com.h2database:h2'
+//    runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'mysql:mysql-connector-java'
 }
 
 test {
     useJUnitPlatform()
+}
+
+docker {
+    println(tasks.bootJar.outputs.files)
+    name project.name+":"+version
+    dockerfile file('../Dockerfile')
+    files tasks.bootJar.outputs.files
+    buildArgs(['JAR_FILE': tasks.bootJar.outputs.files.singleFile.name])
 }
