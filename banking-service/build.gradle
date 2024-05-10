@@ -16,7 +16,7 @@ compileJava {
     targetCompatibility = 17
 }
 
-group 'org.mypay.membership'
+group 'org.mypay.banking'
 version '1.0.0'
 
 apply plugin: 'java'
